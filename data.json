@@ -1,0 +1,15 @@
+{
+  "countdown": 5400,
+  "pages": [
+    [
+      { "name": "Fortnite", "status": "green" },
+      { "name": "Minecraft", "status": "yellow" },
+      { "name": "Valorant", "status": "black" }
+    ],
+    [
+      { "name": "FIFA 23", "status": "yellow" },
+      { "name": "Rocket League", "status": "green" },
+      { "name": "Overwatch", "status": "black" }
+    ]
+  ]
+}
