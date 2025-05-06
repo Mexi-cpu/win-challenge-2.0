@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Overlay Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="panel-body">
+  <div class="sidebar">
+    <h2>Overlay Admin Panel</h2>
+    <button onclick="location.href='login.html'">Logout</button>
+    <ul>
+      <li>Dashboard</li>
+      <li class="active">Scenes Control</li>
+      <li>Timer Control</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="control-panel">
+      <h3>Live Control</h3>
+      <button class="start-btn" onclick="startOverlay()">Start Overlay</button>
+      <button class="stop-btn" onclick="stopOverlay()">Stop Overlay</button>
+      <br><br>
+      <label>Szene wählen:</label>
+      <select id="sceneSelect">
+        <option value="Intro">Intro</option>
+        <option value="Main">Main</option>
+        <option value="Break">Break</option>
+      </select>
+      <button onclick="changeScene()">Change Scene</button>
+    </div>
+
+    <div class="status-panel">
+      <h3>Current Status</h3>
+      <p>Overlay Status: <span id="overlayStatus">Inactive</span></p>
+      <p>Aktive Szene: <span id="activeScene">-</span></p>
+    </div>
+
+    <div class="timer-control">
+      <h3>Timer Control</h3>
+      <button onclick="startTimer()">Start Timer</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
